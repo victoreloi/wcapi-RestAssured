@@ -9,7 +9,5 @@ public interface Constants {
     Integer PORT = 443; //http-80
     String BASE_PATH = "";
 
-    ContentType CONTENT_TYPE = ContentType.JSON;
-
     Long MAX_TIMEOUT = 5000L;
 }

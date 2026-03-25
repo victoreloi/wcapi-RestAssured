@@ -4,6 +4,7 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
+import io.restassured.http.ContentType;
 import org.hamcrest.Matchers;
 import org.junit.BeforeClass;
 
@@ -16,7 +17,7 @@ public class RequestBase implements Constants{
         RestAssured.basePath = BASE_PATH;
 
         RequestSpecBuilder reqBuilder = new RequestSpecBuilder();
-        reqBuilder.setContentType(CONTENT_TYPE);
+        reqBuilder.setContentType(ContentType.JSON);
         reqBuilder.log(LogDetail.ALL);
         RestAssured.requestSpecification = reqBuilder.build();
 
