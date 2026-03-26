@@ -10,4 +10,7 @@ public interface Constants {
     String BASE_PATH = "";
 
     Long MAX_TIMEOUT = 5000L;
+
+    Integer PROD_ACCOUNT_ID = 2590914;
+
 }
